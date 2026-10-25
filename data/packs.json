@@ -1,0 +1,30 @@
+[
+  {
+    "id": "official-001",
+    "name": "官方表情包1号",
+    "version": "1.0.0",
+    "revision": "77f976826f058e566b7a84035774192871b6baac",
+    "repo": "anka-afk/astrbot-meme-pack-official-01",
+    "license": "CC-BY-NC-SA-4.0",
+    "license_evidence": "docs/upstream/official-manifest.json",
+    "author": "anka-afk",
+    "enabled": true,
+    "status": "approved",
+    "imported_at": "2026-10-25T15:07:20.642492+00:00",
+    "rejected": []
+  },
+  {
+    "id": "seio-stickers",
+    "name": "AstrBot娘表情包",
+    "version": "2026.09.0",
+    "revision": "7092297c38c9f07507748bc58ef4fa388a0bf3a2",
+    "repo": "anka-afk/seio-stickers",
+    "license": "仅限非商业使用；允许下载、分享与分发（详见 LICENSE-ASSETS.md）",
+    "license_evidence": "docs/upstream/seio-LICENSE-ASSETS.md",
+    "author": "素材画师：失效药片；资源整理：camera-2018；Meme Manager 适配：anka",
+    "enabled": true,
+    "status": "approved",
+    "imported_at": "2026-10-25T15:10:31.498381+00:00",
+    "rejected": []
+  }
+]

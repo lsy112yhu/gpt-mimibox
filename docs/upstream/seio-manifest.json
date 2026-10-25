@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "seio-stickers",
+  "name": "AstrBot娘表情包",
+  "version": "2026.09.0",
+  "description": "收录 208 个 AstrBot娘动态表情，按 15 个聊天语义类别整理，适合日常对话、情绪表达与互动场景。",
+  "author": "素材画师：失效药片；资源整理：camera-2018；Meme Manager 适配：anka",
+  "homepage": "https://github.com/camera-2018/astrbot-seio-stickers",
+  "license": "仅限非商业使用；允许下载、分享与分发（详见 LICENSE-ASSETS.md）",
+  "tags": ["seio", "animated", "gif", "non-commercial"],
+  "icon": "previews/cover.jpg",
+  "previews": ["previews/cover.jpg", "previews/overview.webp"],
+  "compat": {
+    "min_plugin_version": "4.0.0"
+  },
+  "source": {
+    "type": "github",
+    "repo": "anka-afk/seio-stickers",
+    "ref": "v2026.09.0",
+    "subpath": "."
+  },
+  "extensions": {
+    "upstream": {
+      "repository": "camera-2018/astrbot-seio-stickers",
+      "release": "v2026.09",
+      "asset": "astrbot-seio-stickers-gif-240-500k.zip",
+      "original_manifest": "upstream-manifest.json"
+    }
+  },
+  "categories": {
+    "work": {
+      "description": "用于工作、直播、打字、记录、忙碌、摸鱼、任务推进或停止工作等场景；相关关键词：书呆子、停止。"
+    },
+    "angry": {
+      "description": "用于表达生气、反对、责备或带夸张动作的强烈吐槽；避免用于严肃冲突。"
+    },
+    "confused": {
+      "description": "用于疑惑、思考、发呆、头晕、书呆子表情或遇到难以理解的信息时。"
+    },
+    "happy": {
+      "description": "用于大笑、庆祝、得分、胜利或明显愉快的正向反馈。"
+    },
+    "sad": {
+      "description": "用于哭泣、受挫、害怕、尴尬失败、停止或表达低落情绪。"
+    },
+    "shy": {
+      "description": "用于害羞、紧张、暧昧、收到赞美或俏皮卖萌的场景；相关关键词：害羞3。"
+    },
+    "surprised": {
+      "description": "用于惊吓、意外、期待落地或突然发生荒诞事件时；相关关键词：期待3。"
+    },
+    "sleep": {
+      "description": "用于疲倦、休息、睡觉、加载等待、枕头互动或需要暂时放空时。"
+    },
+    "like": {
+      "description": "用于点赞、认同、喜爱、送礼、爱心互动、眨眼或温和的积极回应。"
+    },
+    "food": {
+      "description": "用于吃饭、喝饮料、馋嘴、下午茶、干杯、舔冰淇淋、补水或等待开饭的场景。"
+    },
+    "money": {
+      "description": "用于红包、打赏、付款、要钱、刷卡或与金钱奖励相关的玩笑。"
+    },
+    "greeting": {
+      "description": "用于打招呼、到达、冒泡、提醒对方注意或开始互动。"
+    },
+    "entertainment": {
+      "description": "用于唱歌、跳舞、游戏、摄影、绘画、音乐、摆动和其他娱乐活动。"
+    },
+    "comfort": {
+      "description": "用于摸头、安慰、自我安慰、友好接触或表示事情仍可控制。"
+    },
+    "mischief": {
+      "description": "用于小丑、吐舌、按钮恶作剧、静音等轻松调皮场景；不用于恶意攻击。"
+    }
+  }
+}

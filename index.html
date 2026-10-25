@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><meta name="description" content="MimiBox，私人的四次元表情口袋。找到此刻刚刚好的回应。"><meta name="theme-color" content="#faf8f3"><title>MimiBox · 四次元表情口袋</title><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect rx='20' width='64' height='64' fill='%23fa8157'/%3E%3Ctext x='10' y='46' font-size='43'%3Eฅ%3C/text%3E%3C/svg%3E"><link rel="stylesheet" href="./src/style.css"><script type="module" src="./src/app.js"></script></head>
+<body>
+<aside class="sidebar">
+ <a class="brand" href="#"><span class="brand-mark">ฅ</span><span>MimiBox<small>四次元表情口袋</small></span></a>
+ <div class="side-label">我的口袋 <span>PRIVATE COLLECTION</span></div>
+ <nav aria-label="图库导航"><button class="nav-item active" id="all-nav"><span>▦</span> 全部表情 <b id="nav-count">—</b></button><button class="nav-item" id="favorites-nav"><span>♡</span> 我的收藏 <b id="fav-count">0</b></button></nav>
+ <div class="side-label category-label">按情绪找一找 <span id="category-count"></span></div>
+ <nav class="category-nav" id="categories" aria-label="分类"></nav>
+ <button class="side-bottom" id="sources-open"><span>◫</span><span>每张表情，都有来处<small>查看素材来源与使用许可 ↗</small></span></button>
+</aside>
+<div class="workspace">
+ <header class="topbar"><span class="breadcrumb">我的口袋 <i>/</i> <strong id="breadcrumb">全部表情</strong></span><div class="top-actions"><span class="private-pill">● 私人收藏室</span><button class="icon-btn" id="theme" aria-label="切换深浅色">◐</button><button class="subtle-btn" id="manage-open">管理口袋 <span>↗</span></button></div></header>
+ <main>
+ <section class="hero"><div class="hero-copy"><span class="eyebrow">A LITTLE BOX OF ENDLESS REACTIONS</span><h1>有些心情，<br>一张表情就懂了<span>。</span></h1><p>把喜欢的表情装进口袋，<br class="mobile-break">留给每一个想要回应的瞬间。</p><div class="hero-stats" id="stats">正在打开口袋…</div></div><div class="hero-art" id="hero-art" aria-label="表情精选"><span class="doodle">✧</span><span class="art-note">今天也要好好表达呀 ↗</span></div></section>
+ <section class="discovery" aria-label="查找表情"><form class="search-wrap" id="search-form"><span aria-hidden="true">⌕</span><input id="search" type="search" autocomplete="off" placeholder="说说你的心情，例如「震惊猫猫」「鼓励我做数学题」" aria-label="搜索表情"><kbd>/</kbd><button class="search-submit" type="submit">找一找</button></form><button class="random-btn" id="random"><span>⤨</span> 随便翻翻</button></section>
+ <div class="suggestions"><span>试试看</span><button data-query="震惊猫猫">震惊猫猫</button><button data-query="鼓励我做数学题">学习需要一点鼓励</button><button data-query="无语">此刻无语</button><button data-query="晚安">困困了</button></div>
+ <section class="collection"><div class="collection-top"><div><h2 id="collection-title">全部表情 <span id="result-count"></span></h2><p id="result-note">每个小表情，都是一句没说出口的话。</p></div><div class="filters"><select id="pack-filter" aria-label="按资源包筛选"><option value="">全部资源包</option></select><select id="format-filter" aria-label="按格式筛选"><option value="">全部格式</option><option value="animated">只看动图</option><option value="static">只看静图</option></select><select id="sort" aria-label="排序"><option value="relevance">默认排序</option><option value="newest">最近加入</option><option value="title">名称排序</option></select></div></div><div id="active-filters"></div><div id="grid" class="meme-grid" aria-live="polite"></div><div class="more-wrap"><button class="subtle-btn" id="load-more">再翻一点 ↓</button><span id="page-note"></span></div></section>
+ <footer><span><b>ฅ MimiBox</b> 为每一次聊天，留一点可爱。</span><button id="integration-open">关于聊天接入 ↗</button><span>非商业收藏 · 尊重原作者</span></footer>
+ </main>
+</div>
+<dialog id="detail" class="detail-dialog"><div id="detail-content"></div></dialog>
+<dialog id="manage" class="panel-dialog"><div class="panel-heading"><div><span class="eyebrow">CURATE YOUR LITTLE BOX</span><h2>整理我的口袋</h2></div><button class="icon-btn" data-close="manage" aria-label="关闭管理">×</button></div><p class="notice">收藏、编辑和上传保存在当前浏览器。换设备前请导出备份；同步到仓库可使用项目中的导入工具。</p><div class="manage-tabs"><button class="active" data-tab="upload">上传表情</button><button data-tab="packs">资源包</button><button data-tab="backup">备份与恢复</button></div><div id="manage-body"></div></dialog>
+<dialog id="info" class="panel-dialog"><div class="panel-heading"><h2 id="info-title"></h2><button class="icon-btn" data-close="info" aria-label="关闭说明">×</button></div><div id="info-body"></div></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+<noscript>请启用 JavaScript 以搜索和浏览 MimiBox。</noscript>
+</body></html>
